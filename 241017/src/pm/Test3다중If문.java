@@ -42,11 +42,11 @@ public class Test3다중If문 {
     // } else
     // grade = "재수강";
 
-    if (score2 >= 95)
+    if (score2 >= 95) {
       grade = "A+";
-    else if (score2 >= 90)
+    } else if (score2 >= 90) {
       grade = "A-";
-    else if (score2 >= 85)
+    } else if (score2 >= 85)
       grade = "B+";
     else if (score2 >= 80)
       grade = "B-";
