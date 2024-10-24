@@ -1,16 +1,16 @@
-package pm;
+package homework;
 
 public class EmpVO {
-  int number;
+  String number;
   String name;
   String pos;
   String dept;
 
-  public int getNumber() {
+  public String getNumber() {
     return number;
   }
 
-  public void setNumber(int number) {
+  public void setNumber(String number) {
     this.number = number;
   }
 
