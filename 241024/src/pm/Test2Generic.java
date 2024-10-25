@@ -13,7 +13,7 @@ public class Test2Generic {
   public Test2Generic(String n, int a) {
     this.name = n;
     this.age = a;
-  }
+  } // 인자를 2개 받는 생성자
 
   public Test2Generic() {
   } // 기본생성자
