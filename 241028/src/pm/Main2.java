@@ -12,11 +12,19 @@ public class Main2 {
     test(car1, "현대"); // print에서 HDCarEx2
     test(car2, "기아"); // print에서 KIACarEx2
     test(car3, "자동차"); // print에서 CarEx2
+
+    test1(car1, 1); // HDCarEx2, DB가 OverRiding되서 4가 나옴.
+    test1(car3, 1); // CarEx2, DB가 OverRiding안되서 2가 나옴.
   }
 
   public static void test(CarEx2 n, String m) {
     n.setModel(m);
     n.print();
+  }
+
+  public static void test1(CarEx2 n, int i) {
+    int ni = n.DB(i);
+    System.out.println(ni);
   }
 
   /*

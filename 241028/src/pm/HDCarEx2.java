@@ -8,6 +8,7 @@ public class HDCarEx2 extends CarEx2 {
   @Override
   public int DB(int i) {
     // TODO Auto-generated method stub
-    return super.DB(i);
+    int ni = super.DB(i) * 2;
+    return ni;
   }
 }
