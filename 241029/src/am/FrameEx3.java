@@ -12,7 +12,10 @@ public class FrameEx3 extends JFrame {
 
   public static void main(String[] args) {
     // 현재 클래스 생성
-    FrameEx3 ex = new FrameEx3();
+
+    // FrameEx3 ex = new FrameEx3();
+    new FrameEx3(); // 객체 생성만 할거면 생성자만 호출해도 된다.
+
     // ex.setSize(500, 450);
     // ex.setVisible(true);
     // ex.setLocation(500, 50);

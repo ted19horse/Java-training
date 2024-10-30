@@ -9,7 +9,6 @@ public class Test1 implements InterEx1 {
    */
   @Override // 어노테이션, 컴파일러가 오버라이딩이 제대로 되었는지 확인한다.
   public void print() {
-    // TODO Auto-generated method stub
     System.out.println("재정의했어요!");
   }
 

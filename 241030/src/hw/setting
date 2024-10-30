@@ -1,0 +1,33 @@
+Ques 1.
+
+Use JFrame
+
+width 400
+height 450
+
+JPanel at NORTH
+has 8 buttons has each number from 2 to 9
+
+JTextArea at Other
+
+WHen button clicked, erase all contents
+
+ex, push button 3
+
+display >
+
+3단
+----------
+3*1=3
+3*2=6
+
+
+QUes 2.
+
+Same window like MyFrameEx2
+
+Change Button text to L, C, R
+
+When click L, flow left all buttons
+When click C, flow right all buttons
+When click R, flow center all buttons

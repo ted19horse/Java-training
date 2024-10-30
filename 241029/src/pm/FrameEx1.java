@@ -27,6 +27,7 @@ public class FrameEx1 extends JFrame {
   }
 
   public static void main(String[] args) {
-    FrameEx1 ex1 = new FrameEx1();
+    // FrameEx1 ex1 = new FrameEx1();
+    new FrameEx1(); // 변수 재사용을 하지 않는다면 생성자만 호출해되 된다.
   }
 }

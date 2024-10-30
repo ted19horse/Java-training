@@ -43,6 +43,7 @@ public class FrameEx3 extends JFrame {
   }
 
   public static void main(String[] args) {
-    FrameEx3 ex = new FrameEx3("타이틀");
+    // FrameEx3 ex = new FrameEx3("타이틀");
+    new FrameEx3("타이틀"); // 변수를 재사용하지 않는다면 생성자만 호출해도 된다.
   }
 }
