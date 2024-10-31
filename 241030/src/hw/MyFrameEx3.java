@@ -56,6 +56,7 @@ public class MyFrameEx3 extends JFrame implements ActionListener {
     panelNorth.add(bt7 = new JButton("7"));
     panelNorth.add(bt8 = new JButton("8"));
     panelNorth.add(bt9 = new JButton("9"));
+    /* 이 부분을 배열로 처리하고, 이벤트 리스너에서는 버튼 내부의 텍스트 값을 읽어 처리할 수 있었다. */
     this.add(panelNorth, BorderLayout.NORTH);
 
     /* Center panel */

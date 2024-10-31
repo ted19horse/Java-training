@@ -19,14 +19,12 @@ public class MyFrameEx4 extends JFrame implements ActionListener {
   public void actionPerformed(ActionEvent e) {
     if (e.getSource() == btL) {
       flow.setAlignment(FlowLayout.LEFT);
-      panelNorth.setLayout(flow);
     } else if (e.getSource() == btR) {
       flow.setAlignment(FlowLayout.RIGHT);
-      panelNorth.setLayout(flow);
     } else {
       flow.setAlignment(FlowLayout.CENTER);
-      panelNorth.setLayout(flow);
     }
+    panelNorth.setLayout(flow);
     this.revalidate();
     this.repaint();
   }
