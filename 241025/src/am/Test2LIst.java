@@ -95,7 +95,7 @@ public class Test2LIst {
     // 자료형 설정 > 특정 자료형만 사용 가능
     ArrayList<Test1Gen<String>> ar2 = new ArrayList<>();
     ar2.add(t1);
-    ar2.add(t2);
-    ar2.add(t3);
+    // ar2.add(t2);
+    // ar2.add(t3);
   }
 }

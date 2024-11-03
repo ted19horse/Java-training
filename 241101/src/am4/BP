@@ -1,0 +1,10 @@
+JFrame
+
+width 800
+height 250
+
+panel on north
+
+button on panel, flow right
+
+mk lotto num, show on frame
