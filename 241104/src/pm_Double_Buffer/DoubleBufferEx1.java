@@ -24,6 +24,14 @@ public class DoubleBufferEx1 extends JFrame {
         // g.fillRect(x, y, w, h);
 
         /* 더블버퍼 방식 */
+
+        /*
+         * 기존의 이미지 repaint() 방식은 update(지우기) 후 paint(그리기)
+         * 그래서 이미지가 지워졌다가 다시 그려지는 순간의 공백이 보여 블링크 현상이 생김
+         * 더블버퍼 방식은 현재 이미지 위에 다른 이미지를 덧씌우는 방식
+         * 블링크 현상이 생기지 않는다
+         */
+
         // 버퍼 기능을 가지고 있는 이미지객체를 하나 준비하자.
         // 크기는 현재 Canvas 와 동일한 크기여야한다.
         int cw = this.getWidth(); // 여기서 this 는 Canvas 를 상속받는 객체 주소 can

@@ -82,20 +82,26 @@ public class Test2LIst {
      * 제네릭 타입을 지정 안하면 모든 타입의 데이터를 사용 가능하다.
      */
 
-    Test1Gen<String> t1 = new Test1Gen<String>();
-    Test1Gen<Long> t2 = new Test1Gen<>();
-    Test1Gen<Float> t3 = new Test1Gen<>();
+    /*
+     * Test1Gen<String> t1 = new Test1Gen<String>();
+     * Test1Gen<Long> t2 = new Test1Gen<>();
+     * Test1Gen<Float> t3 = new Test1Gen<>();
+     */
 
     // 자료형 미설정 > 모든 자료형 입력 가능
-    ArrayList<Test1Gen> ar1 = new ArrayList<>();
-    ar1.add(t1);
-    ar1.add(t2);
-    ar1.add(t3);
+    /*
+     * ArrayList<Test1Gen> ar1 = new ArrayList<>();
+     * ar1.add(t1);
+     * ar1.add(t2);
+     * ar1.add(t3);
+     */
 
     // 자료형 설정 > 특정 자료형만 사용 가능
-    ArrayList<Test1Gen<String>> ar2 = new ArrayList<>();
-    ar2.add(t1);
-    // ar2.add(t2);
-    // ar2.add(t3);
+    /*
+     * ArrayList<Test1Gen<String>> ar2 = new ArrayList<>();
+     * ar2.add(t1);
+     * ar2.add(t2);
+     * ar2.add(t3);
+     */
   }
 }
