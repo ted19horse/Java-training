@@ -1,4 +1,4 @@
-package pm2_Game_fuck;
+package pm3_Game_fuck;
 
 import java.awt.Rectangle;
 import java.util.Iterator;

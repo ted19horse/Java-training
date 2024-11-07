@@ -1,6 +1,8 @@
-package pm2_Game_fuck;
+package pm3_Game_fuck;
 
+import java.awt.BorderLayout;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.KeyAdapter;
@@ -13,6 +15,7 @@ import java.util.ArrayList;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 public class Fuck extends JFrame {
   // 첫번째 작업 내용 ----------------------------------------
@@ -66,6 +69,10 @@ public class Fuck extends JFrame {
   // 네번째 작업 내용----------------------------------------
   // 총알객체(Explotion)가 저장될 곳
   ArrayList<Bullet> b_list = new ArrayList<Bullet>();
+
+  // 다섯번째 작업 내용----------------------------------------
+  JPanel panelScoreBoard;
+  JTextField textFieldScore;
 
   // 첫번째 작업 내용----------------------------------------
   JPanel p = new JPanel() {
@@ -153,6 +160,15 @@ public class Fuck extends JFrame {
     // 첫번째 작업 내용 ----------------------------------------
     init_game(); // 게임 초기화
     init_me_pos(); // 케릭터 초기화
+
+    // 다섯번째 작업 내용 ----------------------------------------
+    p.setLayout(new BorderLayout());
+
+    panelScoreBoard = new JPanel(new FlowLayout());
+    panelScoreBoard.setOpaque(false);
+    textFieldScore = new JTextField(8);
+    panelScoreBoard.add(textFieldScore, new FlowLayout(FlowLayout.RIGHT));
+    p.add(panelScoreBoard, BorderLayout.NORTH);
 
     p.setFocusable(true);
     this.setLocation(1000, 100);
