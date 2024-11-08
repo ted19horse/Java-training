@@ -90,25 +90,28 @@ public class BufferedInputEx5 extends JFrame implements ActionListener {
           /* 임시 메모리를 가지는 InputStream을 생성, BufferedInputStream */
           BufferedInputStream bis = null;
           /* 모든 InputStream은 생성시에 Exception발생이 가능하므로 예외처리가 필수 */
+
+          /* 모든 ~~~InputStream은 I/O 단위를 byte로 사용함. */
+          /* 그러므로 byte[] 배열을 생성하며, 이미지 등의 파일도 처리하기 때문에 4kb를 일반적으로 사용 */
+          byte[] buf = new byte[4096];
+
+          /* 몇개의 글자를 읽어들였는지 int size 변수를 사용할 수 있음 */
+          int size = 0;
           try {
             /* BufferedInputStream 생성시에 인자로 InputStream이 필요함 */
             /* 모든 ~~~InputStream은 InputStream을 상속받음 */
             /* 이 경우에는 File의 내용을 입력받기 때문에 FileInputStream을 사용 */
-            bis = new BufferedInputStream(new FileInputStream(path));
-
-            /* 모든 ~~~InputStream은 I/O 단위를 byte로 사용함. */
-            /* 그러므로 byte[] 배열을 생성하며, 이미지 등의 파일도 처리하기 때문에 4kb를 일반적으로 사용 */
-            byte[] buf = new byte[4096];
+            bis = new BufferedInputStream(new FileInputStream(file));
 
             /* 해당 Stream을 read()하면 해당 위치 데이터의 byte값을 읽는다. */
             /* 최상위 InputStream 안의 마커가 자동으로 현재 입력중인 데이터의 위치값을 기록한다 */
             /* bis(BufferedInputStream).read()를 하면 해당 InputStream의 데이터를 byte단위로 하나씩 입력받는다 */
             /* byte값은 0~255 사이이며, -1인 경우 해당하는 byte가 없으므로 더 이상의 입력데이터가 없다 */
             /* read()에 인자로 배열을 주면 해당 배열에 입력받은 byte를 입력한다 */
-            while (bis.read(buf) != -1) {
+            while ((size = bis.read(buf)) != -1) {
             }
 
-            String content = new String(buf);
+            String content = new String(buf, 0, size);
             textArea.setText(content);
             textArea.updateUI();
           } catch (Exception e) {
