@@ -1,14 +1,11 @@
 package pm5_HW;
 
-import java.awt.Canvas;
-import java.awt.Color;
-import java.awt.Graphics;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
-import javax.swing.JFrame;
 
 public class FrameEx12 extends JFrame {
   /* Field */

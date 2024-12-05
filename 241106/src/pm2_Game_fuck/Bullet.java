@@ -1,6 +1,6 @@
 package pm2_Game_fuck;
 
-import java.awt.Rectangle;
+import java.awt.*;
 import java.util.Iterator;
 
 public class Bullet extends Thread {

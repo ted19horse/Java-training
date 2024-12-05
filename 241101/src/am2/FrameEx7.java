@@ -1,11 +1,10 @@
 package am2;
 
+import javax.swing.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
-import javax.swing.JFrame;
 
 public class FrameEx7 extends JFrame implements MouseListener {
   CanvasEx7 can;

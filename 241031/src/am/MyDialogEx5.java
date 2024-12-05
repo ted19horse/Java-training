@@ -1,9 +1,7 @@
 package am;
 
-import java.awt.FlowLayout;
-
-import javax.swing.JButton;
-import javax.swing.JDialog;
+import javax.swing.*;
+import java.awt.*;
 
 // ActionListener 를 MyDialogEx5 에서 처리할 경우
 // public class MyDialogEx5 extends JDialog implements ActionListener {

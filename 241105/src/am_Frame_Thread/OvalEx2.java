@@ -1,6 +1,6 @@
 package am_Frame_Thread;
 
-import java.awt.Color;
+import java.awt.*;
 
 public class OvalEx2 extends Thread {
   // 클릭할 때마다 생성되는 타원객체

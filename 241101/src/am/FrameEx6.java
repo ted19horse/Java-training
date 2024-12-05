@@ -1,11 +1,10 @@
 package am;
 
+import javax.swing.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
-import javax.swing.JFrame;
 
 public class FrameEx6 extends JFrame implements MouseMotionListener {
   // 현재창에 들어갈 객체들 모두 멤버변수로 선언

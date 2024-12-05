@@ -1,6 +1,6 @@
 package pm2_Game_fuck;
 
-import java.awt.Point;
+import java.awt.*;
 
 public class Explotion {
   // 주인공과 운석이 충돌했을 때 폭발이 발생하는 의미의 클래스

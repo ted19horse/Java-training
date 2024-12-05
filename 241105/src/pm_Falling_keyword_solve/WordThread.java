@@ -1,6 +1,6 @@
 package pm_Falling_keyword_solve;
 
-import java.awt.Color;
+import java.awt.*;
 
 public class WordThread extends Thread {
   // 부모창의 주소

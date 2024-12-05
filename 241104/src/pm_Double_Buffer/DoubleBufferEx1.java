@@ -1,15 +1,11 @@
 package pm_Double_Buffer;
 
-import java.awt.Canvas;
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Image;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
-import javax.swing.JFrame;
 
 public class DoubleBufferEx1 extends JFrame {
   int x = 200, y = 235, w = 80, h = 30;

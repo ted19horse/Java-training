@@ -1,8 +1,6 @@
 package pm;
 
-import java.awt.Canvas;
-import java.awt.Color;
-import java.awt.Graphics;
+import java.awt.*;
 
 public class MyCanvas extends Canvas {
 

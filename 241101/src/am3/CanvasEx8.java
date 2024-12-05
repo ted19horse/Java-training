@@ -1,9 +1,6 @@
 package am3;
 
-import java.awt.Canvas;
-import java.awt.Graphics;
-import java.awt.Image;
-import java.awt.Toolkit;
+import java.awt.*;
 
 public class CanvasEx8 extends Canvas {
   Toolkit tk; // 이미지를 생성할 때 필요하다.

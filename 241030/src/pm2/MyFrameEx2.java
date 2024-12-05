@@ -1,13 +1,9 @@
 package pm2;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
 
 // public class MyFrameEx2 extends JFrame implements WindowListener, ActionListener {
 public class MyFrameEx2 extends JFrame implements ActionListener {

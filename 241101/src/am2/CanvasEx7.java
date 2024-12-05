@@ -1,7 +1,6 @@
 package am2;
 
-import java.awt.Canvas;
-import java.awt.Graphics;
+import java.awt.*;
 import java.util.ArrayList;
 
 public class CanvasEx7 extends Canvas {

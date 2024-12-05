@@ -1,9 +1,8 @@
 package am3;
 
+import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
-import javax.swing.JFrame;
 
 public class FrameEx8 extends JFrame {
   CanvasEx8 can;

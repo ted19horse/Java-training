@@ -1,9 +1,8 @@
 package pm;
 
+import javax.swing.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-
-import javax.swing.JFrame;
 
 public class FrameEx10 extends JFrame implements KeyListener {
   CanvasEx10 can;

@@ -1,6 +1,6 @@
 package am_Game;
 
-import java.awt.Rectangle;
+import java.awt.*;
 import java.util.Iterator;
 
 public class MeteorEx1 extends Thread {

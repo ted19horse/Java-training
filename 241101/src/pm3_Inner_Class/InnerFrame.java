@@ -1,9 +1,8 @@
 package pm3_Inner_Class;
 
+import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
-import javax.swing.JFrame;
 
 public class InnerFrame extends JFrame {
   public InnerFrame() {

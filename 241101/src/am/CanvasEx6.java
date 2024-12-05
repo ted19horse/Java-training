@@ -1,7 +1,6 @@
 package am;
 
-import java.awt.Canvas;
-import java.awt.Graphics;
+import java.awt.*;
 
 public class CanvasEx6 extends Canvas {
   // 마우스 이동 이벤트를 감지하여 위치값(x,y)를 저장할 변수

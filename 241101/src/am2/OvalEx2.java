@@ -1,6 +1,6 @@
 package am2;
 
-import java.awt.Color;
+import java.awt.*;
 
 public class OvalEx2 {
   int x, y, wh;

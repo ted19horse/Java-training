@@ -1,8 +1,6 @@
 package pm;
 
-import java.awt.Canvas;
-import java.awt.Color;
-import java.awt.Graphics;
+import java.awt.*;
 import java.awt.event.KeyEvent;
 
 public class CanvasEx10 extends Canvas {

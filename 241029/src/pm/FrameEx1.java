@@ -1,9 +1,7 @@
 package pm;
 
-import java.awt.BorderLayout;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
+import javax.swing.*;
+import java.awt.*;
 
 public class FrameEx1 extends JFrame {
   // 현재 창에 보여질 객체들 또는 변수들을 선언

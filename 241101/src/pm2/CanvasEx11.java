@@ -1,8 +1,6 @@
 package pm2;
 
-import java.awt.Canvas;
-import java.awt.Color;
-import java.awt.Graphics;
+import java.awt.*;
 
 public class CanvasEx11 extends Canvas {
   int x, y, l = 30, cmd;

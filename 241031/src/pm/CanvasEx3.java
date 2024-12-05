@@ -1,8 +1,8 @@
 package pm;
 
-import javax.swing.JFrame;
-
 import am.MyWin;
+
+import javax.swing.*;
 
 public class CanvasEx3 extends JFrame {
 

@@ -1,11 +1,10 @@
 package pm2;
 
+import javax.swing.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
-import javax.swing.JFrame;
 
 public class FrameEx11 extends JFrame implements KeyListener {
   CanvasEx11 can;

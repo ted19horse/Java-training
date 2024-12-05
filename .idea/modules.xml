@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/241017/241017.iml" filepath="$PROJECT_DIR$/241017/241017.iml" />
+      <module fileurl="file://$PROJECT_DIR$/241018/241018.iml" filepath="$PROJECT_DIR$/241018/241018.iml" />
+      <module fileurl="file://$PROJECT_DIR$/241021/241021.iml" filepath="$PROJECT_DIR$/241021/241021.iml" />
+      <module fileurl="file://$PROJECT_DIR$/241022/241022.iml" filepath="$PROJECT_DIR$/241022/241022.iml" />
+      <module fileurl="file://$PROJECT_DIR$/241023/241023.iml" filepath="$PROJECT_DIR$/241023/241023.iml" />
+      <module fileurl="file://$PROJECT_DIR$/241024/241024.iml" filepath="$PROJECT_DIR$/241024/241024.iml" />
+      <module fileurl="file://$PROJECT_DIR$/241025/241025.iml" filepath="$PROJECT_DIR$/241025/241025.iml" />
+      <module fileurl="file://$PROJECT_DIR$/241028/241028.iml" filepath="$PROJECT_DIR$/241028/241028.iml" />
+      <module fileurl="file://$PROJECT_DIR$/241029/241029.iml" filepath="$PROJECT_DIR$/241029/241029.iml" />
+      <module fileurl="file://$PROJECT_DIR$/241030/241030.iml" filepath="$PROJECT_DIR$/241030/241030.iml" />
+      <module fileurl="file://$PROJECT_DIR$/241031/241031.iml" filepath="$PROJECT_DIR$/241031/241031.iml" />
+      <module fileurl="file://$PROJECT_DIR$/241101/241101.iml" filepath="$PROJECT_DIR$/241101/241101.iml" />
+      <module fileurl="file://$PROJECT_DIR$/241104/241104.iml" filepath="$PROJECT_DIR$/241104/241104.iml" />
+      <module fileurl="file://$PROJECT_DIR$/241105/241105.iml" filepath="$PROJECT_DIR$/241105/241105.iml" />
+      <module fileurl="file://$PROJECT_DIR$/241106/241106.iml" filepath="$PROJECT_DIR$/241106/241106.iml" />
+      <module fileurl="file://$PROJECT_DIR$/241107/241107.iml" filepath="$PROJECT_DIR$/241107/241107.iml" />
+      <module fileurl="file://$PROJECT_DIR$/241108/241108.iml" filepath="$PROJECT_DIR$/241108/241108.iml" />
+      <module fileurl="file://$PROJECT_DIR$/241111/241111.iml" filepath="$PROJECT_DIR$/241111/241111.iml" />
+      <module fileurl="file://$PROJECT_DIR$/241205/241205.iml" filepath="$PROJECT_DIR$/241205/241205.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Work.iml" filepath="$PROJECT_DIR$/.idea/Work.iml" />
+    </modules>
+  </component>
+</project>

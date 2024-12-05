@@ -1,10 +1,9 @@
 package pm;
 
-import java.awt.Canvas;
-
-import javax.swing.JFrame;
-
 import am.MyWin;
+
+import javax.swing.*;
+import java.awt.*;
 
 public class CanvasEx2 extends JFrame {
 

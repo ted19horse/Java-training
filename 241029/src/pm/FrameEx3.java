@@ -1,10 +1,7 @@
 package pm;
 
-import java.awt.BorderLayout;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.*;
+import java.awt.*;
 
 public class FrameEx3 extends JFrame {
   // JButton b1, b2, b3, b4, b5;

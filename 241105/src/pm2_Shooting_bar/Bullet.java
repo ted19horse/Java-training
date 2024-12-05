@@ -1,6 +1,6 @@
 package pm2_Shooting_bar;
 
-import java.awt.Color;
+import java.awt.*;
 
 public class Bullet extends Thread {
   int x, y, w = 5, h = 10;

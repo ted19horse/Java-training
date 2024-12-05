@@ -1,13 +1,11 @@
 package pm4_Inner_Class_with_Canvas;
 
-import java.awt.Canvas;
-import java.awt.Graphics;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
-import javax.swing.JFrame;
 
 public class FrameEx5 extends JFrame {
   int x = 30, y = 100, l = 30;

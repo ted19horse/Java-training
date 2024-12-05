@@ -1,6 +1,6 @@
 package am;
 
-import javax.swing.JFrame;
+import javax.swing.*;
 
 public class FrameEx3 extends JFrame {
   public FrameEx3() {

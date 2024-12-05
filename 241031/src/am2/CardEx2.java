@@ -1,15 +1,11 @@
 package am2;
 
-import java.awt.CardLayout;
-import java.awt.Color;
+import am.MyWin;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-
-import am.MyWin;
 
 public class CardEx2 extends JFrame implements ActionListener {
   // 카드 레이아웃은 한 화면을 하나의 카드로 인지하고
