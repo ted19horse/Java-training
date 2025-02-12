@@ -55,7 +55,7 @@ public class CopyClient extends Thread{
             case 2: {
               // 채팅 메세지 전송
               // 접속자 모두에게 채팅메세지 보내기
-              protocol.setMsg(nickName + protocol.getMsg());
+              protocol.setMsg(nickName + ": " + protocol.getMsg());
               server.sendProtocol(protocol);
               break;
             }
@@ -71,7 +71,12 @@ public class CopyClient extends Thread{
       if (out != null) out.close();
       if (socket != null) socket.close();
       // 서버에 ArrayList 에서 현재 객체 삭제
+      server.list.remove(CopyClient.this);
       // 서버의 다른 접속자들에게 현재 객체가 접속 해제한다는 메세지 보내기
+      Protocol p = new Protocol();
+      p.setCmd(2);
+      p.setMsg("*** "+nickName+" is outed. ***");
+      server.sendProtocol(p);
     } catch (Exception e) {
       throw new RuntimeException(e);
     }

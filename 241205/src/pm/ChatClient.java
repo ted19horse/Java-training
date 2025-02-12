@@ -2,10 +2,7 @@ package pm;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
+import java.awt.event.*;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -94,72 +91,102 @@ public class ChatClient extends JFrame {
     this.setVisible(true);
 
     addWindowListener(new WindowAdapter() {
+      @Override
       public void windowClosing(WindowEvent e) {
-        if(socket != null && out != null) {
-          // 서버에 접속된 상태일 때
-          // 접속을 해제하기 위해 3번 Protocol 객체 생성
-          Protocol p = new Protocol();
-          p.setCmd(3);
-          try {
-            out.writeObject(p); // 접속해제를 위한 Protocol
-          } catch (IOException ex) {
-            throw new RuntimeException(ex);
-          }
-        } else {
-          // 서버에 접속하지 않았을 때
-          System.exit(0);
-        }
+        exit();
       }
     });
 
-    // 로그인 버튼을 클릭할 때 사용자가 입력한 대화명을 가져온다.
+    // 로그인에서 엔터 혹은 버튼을 클릭할 때 사용자가 입력한 대화명을 가져온다.
+    nickName_tf.addKeyListener(new KeyAdapter() {
+      @Override
+      public void keyPressed(KeyEvent e) {
+        if(e.getKeyCode() == KeyEvent.VK_ENTER) login();
+      }
+    });
+
     login_btn.addActionListener(new ActionListener() {
       @Override
       public void actionPerformed(ActionEvent e) {
-        String nickname = nickName_tf.getText().trim();
-        if(nickname.isEmpty()) {
-          JOptionPane.showMessageDialog(ChatClient.this, "Please enter a nickname");
-          nickName_tf.setText(""); // 청소
-          nickName_tf.requestFocus(); // 커서 놓기
-        } else {
-          try {
-            // 접속 수행
-            // 192.168.10.105
-            // 192.168.10.102
-            socket = new Socket("192.168.10.103", 5000);
-            out = new ObjectOutputStream(socket.getOutputStream());
-            in = new ObjectInputStream(socket.getInputStream());
-            t.start();
-            Protocol p = new Protocol();
-            p.setCmd(1);
-            p.setMsg(nickname); // 대화명
-            out.writeObject(p);
-            cardLayout.show(getContentPane(), "chat");
-          } catch (Exception ex) {
-            throw new RuntimeException(ex);
-          }
-        }
+        login();
+      }
+    });
+
+    input_tf.addKeyListener(new KeyAdapter() {
+      @Override
+      public void keyPressed(KeyEvent e) {
+        if(e.getKeyCode() == KeyEvent.VK_ENTER) sendMsg();
+        else if(e.getKeyCode() == KeyEvent.VK_ESCAPE) exit();
       }
     });
 
     send_btn.addActionListener(new ActionListener() {
       @Override
       public void actionPerformed(ActionEvent e) {
-        String msg = input_tf.getText().trim();
-        if(!msg.isEmpty()) {
-          try {
-            Protocol p = new Protocol();
-            p.setCmd(2);
-            p.setMsg(msg); // 대화명
-            out.writeObject(p);
-            input_tf.setText("");
-            input_tf.requestFocus();
-          } catch (Exception ex) {
-            throw new RuntimeException(ex);
-          }
-        }
+        sendMsg();
       }
     });
+  }
+
+  public void exit() {
+    if(socket != null && out != null) {
+      // 서버에 접속된 상태일 때
+      // 접속을 해제하기 위해 3번 Protocol 객체 생성
+      Protocol p = new Protocol();
+      p.setCmd(3);
+      try {
+        out.writeObject(p); // 접속해제를 위한 Protocol
+      } catch (IOException ex) {
+        throw new RuntimeException(ex);
+      }
+    } else {
+      // 서버에 접속하지 않았을 때
+      System.exit(0);
+    }
+  }
+
+  public void login() {
+    String nickname = nickName_tf.getText().trim();
+    if(nickname.isEmpty()) {
+      JOptionPane.showMessageDialog(ChatClient.this, "Please enter a nickname");
+      nickName_tf.setText(""); // 청소
+      nickName_tf.requestFocus(); // 커서 놓기
+    } else {
+      try {
+        // 접속 수행
+        // 동화: 192.168.10.102
+        // 192.168.10.103
+        // 조연화: 192.168.10.105
+        socket = new Socket("127.0.0.1", 5000);
+        out = new ObjectOutputStream(socket.getOutputStream());
+        in = new ObjectInputStream(socket.getInputStream());
+        t.start();
+        Protocol p = new Protocol();
+        p.setCmd(1);
+        p.setMsg(nickname); // 대화명
+        out.writeObject(p);
+        cardLayout.show(getContentPane(), "chat");
+        input_tf.requestFocus();
+      } catch (Exception ex) {
+        throw new RuntimeException(ex);
+      }
+    }
+  }
+
+  public void sendMsg() {
+    String msg = input_tf.getText().trim();
+    if(!msg.isEmpty()) {
+      try {
+        Protocol p = new Protocol();
+        p.setCmd(2);
+        p.setMsg(msg);
+        out.writeObject(p);
+        input_tf.setText("");
+        input_tf.requestFocus();
+      } catch (Exception ex) {
+        throw new RuntimeException(ex);
+      }
+    }
   }
 
   public static void main(String[] args) {
